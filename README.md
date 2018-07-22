@@ -7,8 +7,12 @@
   
 > installation guid: 
 
- just clone the project and then run it with php internal web server:
+ just do these 3 steps to run project with php internal web server:
   ```
+ git clone https://github.com/vahidv/pdp.git
+ 
+ composer install
+ 
  php -S localhost:8000 -t public
   ```   
  then navigate to [This Link](http://localhost:8000/public).
