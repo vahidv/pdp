@@ -17,16 +17,16 @@
     <!-- Links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link active" href="http://localhost:8000/">Home</a>
+            <a class="nav-link Home active" href="http://localhost:8000/">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/?pattern=adapter">Adapter</a>
+            <a class="nav-link adapter" href="/?pattern=adapter">Adapter</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/?pattern=decorator">Decorator</a>
+            <a class="nav-link decorator" href="/?pattern=decorator">Decorator</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/?pattern=strategy">Strategy</a>
+            <a class="nav-link strategy" href="/?pattern=strategy">Strategy</a>
         </li>
     </ul>
 </nav>
