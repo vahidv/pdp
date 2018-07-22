@@ -1,9 +1,9 @@
 # ..:: PHP DESIGN PATTERNS TUTORIAL ::..
 
 > list of patterns: 
-  - Adapter
-  - Decorator
-  - Strategy
+  - [X] Adapter
+  - [X] Decorator
+  - [X] Strategy
   
 > installation guid: 
 
