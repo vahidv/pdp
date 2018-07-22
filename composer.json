@@ -1,0 +1,21 @@
+{
+  "name": "vahid/php-desing-patterns",
+  "description": "most common php design patterns implementation",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "vahid vahedi",
+      "email": "v.vahedi@netbarg.com"
+    }
+  ],
+  "require": {
+    "symfony/validator": "2.1.*",
+    "monolog/monolog": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "src\\": "src/"
+    }
+  }
+}
