@@ -59,9 +59,12 @@
 
 <?php
 
+use src\App;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
-if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['pattern'] . '/index.php')) {
+
+if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['pattern'])) {
     echo '
           <div class="container">
             <div class="row">
@@ -73,7 +76,8 @@ if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['patter
     die();
 }
 
-require_once __DIR__ . '/../src/' . $_GET['pattern'] . '/index.php';
+$app = new App();
+$app->dispatch($_GET['pattern']);
 
 ?>
 
