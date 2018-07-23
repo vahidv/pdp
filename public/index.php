@@ -17,7 +17,7 @@
     <!-- Links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link Home active" href="http://localhost:8000/">Home</a>
+            <a class="nav-link home active" href="http://localhost:8000/">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link adapter" href="/?pattern=adapter">Adapter</a>
@@ -27,6 +27,12 @@
         </li>
         <li class="nav-item">
             <a class="nav-link strategy" href="/?pattern=strategy">Strategy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link chain" href="/?pattern=chain">Chain</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link builder" href="/?pattern=builder">Builder</a>
         </li>
     </ul>
 </nav>
@@ -76,7 +82,7 @@ if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['patter
     die();
 }
 
-$app = new App();
+$app = App::getInstance();
 $app->dispatch($_GET['pattern']);
 
 ?>
