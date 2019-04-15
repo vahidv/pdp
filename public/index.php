@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <title>Design Pattern Tutorial!</title>
+    <title>tests!</title>
 </head>
 <body>
 <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
@@ -18,6 +18,15 @@
     <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link home active" href="http://localhost:8000/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
         </li>
         <li class="nav-item">
             <a class="nav-link adapter" href="/?pattern=adapter">Adapter</a>
@@ -34,6 +43,15 @@
         <li class="nav-item">
             <a class="nav-link builder" href="/?pattern=builder">Builder</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link prototype" href="/?pattern=prototype">Prototype</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link singleton" href="/?pattern=singleton">singleton</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link php" href="/?pattern=php">Php</a>
+        </li>
     </ul>
 </nav>
 <br/>
@@ -41,10 +59,10 @@
 <br/>
 
 <div class="jumbotron">
-    <h1 class="display-4">design pattern Tutorial</h1>
-    <p class="lead">desired patterns like Adapter, Decorator ....</p>
-    <hr class="my-4">
-    <p>choose from menu your desired pattern.</p>
+    <h1 class="display-4">running</h1>
+<!--    <p class="lead">desired patterns like Adapter, Decorator ....</p>-->
+<!--    <hr class="my-4">-->
+<!--    <p>choose from menu your desired pattern.</p>-->
 </div>
 
 <!-- Optional JavaScript -->

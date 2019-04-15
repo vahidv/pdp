@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: vahid
- * Date: 7/23/18
- * Time: 5:01 PM
+ * User: genom
+ * Date: 4/15/19
+ * Time: 2:49 PM
  */
 
 namespace src\builder;
@@ -16,15 +16,13 @@ class BuilderController extends BaseController
 
     public function index()
     {
-        $truckBuilder = new TruckBuilder();
-        $newVehicle = (new Director())->build($truckBuilder);
+        $burger = (new BurgerBuilder(14))
+            ->addCheese()
+            ->addPepperoni()
+            ->addLettuce()
+            ->addTomato()
+            ->build();
 
-        var_dump(get_class($newVehicle));
-        echo '<br />';
-
-        $carBuilder = new CarBuilder();
-        $newVehicle = (new Director())->build($carBuilder);
-
-        var_dump(get_class($newVehicle));
+        var_dump($burger);
     }
 }
