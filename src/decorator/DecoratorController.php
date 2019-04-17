@@ -34,9 +34,10 @@ class DecoratorController extends BaseController
         echo $simpleWithVanilla->getDescription();
 
         // simple coffee with vanilla and milk
-        $simpleWithVanilla = new VanillaCoffee(
-            new MilkCoffee($simpleCoffee)
-        );
+        $simpleWithVanilla =
+            new VanillaCoffee(
+                new MilkCoffee($simpleCoffee)
+            );
         echo '<br />';
         echo $simpleWithVanilla->getCost();
         echo '<br />';

@@ -20,37 +20,47 @@
             <a class="nav-link home active" href="http://localhost:8000/">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link adapter" href="/?pattern=adapter">Adapter</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link decorator" href="/?pattern=decorator">Decorator</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link strategy" href="/?pattern=strategy">Strategy</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link chain" href="/?pattern=chain">Chain</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link builder" href="/?pattern=builder">Builder</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link prototype" href="/?pattern=prototype">Prototype</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link singleton" href="/?pattern=singleton">singleton</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link php" href="/?pattern=php">Php</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Structural
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item adapter" href="/?pattern=adapter">Adapter</a>
+                <a class="dropdown-item bridge" href="/?pattern=bridge">bridge</a>
+                <a class="dropdown-item composite" href="/?pattern=composite">composite</a>
+                <a class="dropdown-item decorator" href="/?pattern=decorator">Decorator</a>
+                <a class="dropdown-item facade" href="/?pattern=facade">facade</a>
+                <a class="dropdown-item flyweight" href="/?pattern=flyweight">flyweight</a>
+                <a class="dropdown-item proxy" href="/?pattern=proxy">proxy</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Creational
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
+                <a class="dropdown-item factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
+                <a class="dropdown-item abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
+                <a class="dropdown-item builder" href="/?pattern=builder">Builder</a>
+                <a class="dropdown-item prototype" href="/?pattern=prototype">Prototype</a>
+                <a class="dropdown-item singleton" href="/?pattern=singleton">singleton</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Behavioral
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item strategy" href="/?pattern=strategy">Strategy</a>
+                <a class="dropdown-item chain" href="/?pattern=chain">Chain</a>
+            </div>
         </li>
     </ul>
 </nav>
@@ -60,9 +70,9 @@
 
 <div class="jumbotron">
     <h1 class="display-4">running</h1>
-<!--    <p class="lead">desired patterns like Adapter, Decorator ....</p>-->
-<!--    <hr class="my-4">-->
-<!--    <p>choose from menu your desired pattern.</p>-->
+    <!--    <p class="lead">desired patterns like Adapter, Decorator ....</p>-->
+    <!--    <hr class="my-4">-->
+    <!--    <p>choose from menu your desired pattern.</p>-->
 </div>
 
 <!-- Optional JavaScript -->
