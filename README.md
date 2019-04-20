@@ -9,7 +9,7 @@ it is just about selecting you desired pattern from menu and then you codes in s
 
 > list of patterns: 
 
-*Creational Patterns
+* Creational Patterns
   - [X] Simple Factory
   - [X] Factory Method
   - [X] Abstract Factory
@@ -18,7 +18,7 @@ it is just about selecting you desired pattern from menu and then you codes in s
   - [X] Singleton
   
   
-*Structural Patterns
+* Structural Patterns
   - [X] Adapter
   - [X] Bridge
   - [X] Composite
@@ -28,7 +28,7 @@ it is just about selecting you desired pattern from menu and then you codes in s
   - [X] Proxy
     
     
-*Behavioral Patterns
+* Behavioral Patterns
   - [X] Strategy    
   - [X] Chain Of Responsibilities
   - [X] Command
