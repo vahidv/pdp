@@ -60,6 +60,14 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item strategy" href="/?pattern=strategy">Strategy</a>
                 <a class="dropdown-item chain" href="/?pattern=chain">Chain</a>
+                <a class="dropdown-item command" href="/?pattern=command">Command</a>
+                <a class="dropdown-item iterator" href="/?pattern=iterator">Iterator</a>
+                <a class="dropdown-item mediator" href="/?pattern=mediator">Mediator</a>
+                <a class="dropdown-item memento" href="/?pattern=memento">Memento</a>
+                <a class="dropdown-item observer" href="/?pattern=observer">Observer</a>
+                <a class="dropdown-item visitor" href="/?pattern=visitor">Visitor</a>
+                <a class="dropdown-item state" href="/?pattern=state">State</a>
+                <a class="dropdown-item template" href="/?pattern=template">Template</a>
             </div>
         </li>
     </ul>
