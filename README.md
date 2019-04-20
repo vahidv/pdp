@@ -2,10 +2,11 @@
 
 pdp is a php design patterns tutorial container to let you focus just on codding!! :facepunch:
 
-by using this package you can see the implementation of most important design patterns in php and also change them and run you codes to see the result in bootstrap view.
+pdp let you see the implementation of most important design patterns in php, change them and run your codes to see the result in bootstrap view.
 
-it is just about selecting you desired pattern from menu and then you codes in same name directory will run automatically.
+it is just about selecting your desired pattern from menu and then your codes in same name directory will run automatically.
 
+pdp implemented design patterns with most famous real world scenarios so you can learn them by very quick look at codes.
 
 > list of patterns: 
 
