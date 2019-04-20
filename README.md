@@ -8,6 +8,8 @@ it is just about selecting your desired pattern from menu and then your codes in
 
 pdp implemented design patterns with most famous real world scenarios so you can learn them by very quick look at codes.
 
+:muscle: :muscle: clone it, read each design pattern codes and then change it to your example :muscle: :muscle:
+
 > list of patterns: 
 
 * Creational Patterns

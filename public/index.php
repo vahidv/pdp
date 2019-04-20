@@ -22,6 +22,20 @@
         <li class="nav-item">
             <a class="nav-link php" href="/?pattern=php">Php</a>
         </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Creational
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
+                <a class="dropdown-item factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
+                <a class="dropdown-item abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
+                <a class="dropdown-item builder" href="/?pattern=builder">Builder</a>
+                <a class="dropdown-item prototype" href="/?pattern=prototype">Prototype</a>
+                <a class="dropdown-item singleton" href="/?pattern=singleton">singleton</a>
+            </div>
+        </li>
 
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -38,20 +52,7 @@
                 <a class="dropdown-item proxy" href="/?pattern=proxy">proxy</a>
             </div>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-                Creational
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
-                <a class="dropdown-item factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
-                <a class="dropdown-item abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
-                <a class="dropdown-item builder" href="/?pattern=builder">Builder</a>
-                <a class="dropdown-item prototype" href="/?pattern=prototype">Prototype</a>
-                <a class="dropdown-item singleton" href="/?pattern=singleton">singleton</a>
-            </div>
-        </li>
+
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                aria-haspopup="true" aria-expanded="false">
