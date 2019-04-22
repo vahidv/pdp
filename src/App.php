@@ -11,13 +11,13 @@ namespace src;
 class App
 {
     private static $instance;
-    
+
     private function __construct()
     {
         //hide constructor
     }
-    
-    static public function getInstance() :App
+
+    static public function getInstance(): App
     {
         if (!self::$instance) {
             self::$instance = new self();
@@ -26,11 +26,19 @@ class App
         return self::$instance;
     }
 
-    public function dispatch($request){
-        $controllerName = (string) ucfirst($request) . 'Controller';
-        $controller =  'src\\' . $request . '\\' . $controllerName;
-        $controller =  new $controller;
-        return $controller->index();
+    public function dispatch($type, $pattern)
+    {
+        $controllerName = (string)ucfirst($pattern) . 'Controller';
+        $controller     = 'src\\' . $type . '\\' . $pattern . '\\' . $controllerName;
+        $controller     = new $controller;
+
+        $result      = $controller->index();
+        $description = $controller->getDescription();
+
+        return json_encode([
+            'result' => $result,
+            'description' => $description
+        ]);
     }
 
     private function __clone()

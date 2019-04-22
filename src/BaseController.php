@@ -12,4 +12,5 @@ namespace src;
 abstract class BaseController
 {
    abstract public function index();
+   abstract public function getDescription();
 }

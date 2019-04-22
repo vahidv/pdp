@@ -28,12 +28,12 @@
                 Creational
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item simpleFactory" href="/?pattern=simpleFactory">SimpleFactory</a>
-                <a class="dropdown-item factoryMethod" href="/?pattern=factoryMethod">FactoryMethod</a>
-                <a class="dropdown-item abstractFactory" href="/?pattern=abstractFactory">AbstractFactory</a>
-                <a class="dropdown-item builder" href="/?pattern=builder">Builder</a>
-                <a class="dropdown-item prototype" href="/?pattern=prototype">Prototype</a>
-                <a class="dropdown-item singleton" href="/?pattern=singleton">singleton</a>
+                <a class="dropdown-item simpleFactory" href="/?type=creational&pattern=simpleFactory">SimpleFactory</a>
+                <a class="dropdown-item factoryMethod" href="/?type=creational&pattern=factoryMethod">FactoryMethod</a>
+                <a class="dropdown-item abstractFactory" href="/?type=creational&pattern=abstractFactory">AbstractFactory</a>
+                <a class="dropdown-item builder" href="/?type=creational&pattern=builder">Builder</a>
+                <a class="dropdown-item prototype" href="/?type=creational&pattern=prototype">Prototype</a>
+                <a class="dropdown-item singleton" href="/?type=creational&pattern=singleton">singleton</a>
             </div>
         </li>
 
@@ -43,13 +43,13 @@
                 Structural
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item adapter" href="/?pattern=adapter">Adapter</a>
-                <a class="dropdown-item bridge" href="/?pattern=bridge">bridge</a>
-                <a class="dropdown-item composite" href="/?pattern=composite">composite</a>
-                <a class="dropdown-item decorator" href="/?pattern=decorator">Decorator</a>
-                <a class="dropdown-item facade" href="/?pattern=facade">facade</a>
-                <a class="dropdown-item flyweight" href="/?pattern=flyweight">flyweight</a>
-                <a class="dropdown-item proxy" href="/?pattern=proxy">proxy</a>
+                <a class="dropdown-item adapter" href="/?type=structural&pattern=adapter">Adapter</a>
+                <a class="dropdown-item bridge" href="/?type=structural&pattern=bridge">bridge</a>
+                <a class="dropdown-item composite" href="/?type=structural&pattern=composite">composite</a>
+                <a class="dropdown-item decorator" href="/?type=structural&pattern=decorator">Decorator</a>
+                <a class="dropdown-item facade" href="/?type=structural&pattern=facade">facade</a>
+                <a class="dropdown-item flyweight" href="/?type=structural&pattern=flyweight">flyweight</a>
+                <a class="dropdown-item proxy" href="/?type=structural&pattern=proxy">proxy</a>
             </div>
         </li>
 
@@ -59,16 +59,16 @@
                 Behavioral
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item strategy" href="/?pattern=strategy">Strategy</a>
-                <a class="dropdown-item chain" href="/?pattern=chain">Chain</a>
-                <a class="dropdown-item command" href="/?pattern=command">Command</a>
-                <a class="dropdown-item iterator" href="/?pattern=iterator">Iterator</a>
-                <a class="dropdown-item mediator" href="/?pattern=mediator">Mediator</a>
-                <a class="dropdown-item memento" href="/?pattern=memento">Memento</a>
-                <a class="dropdown-item observer" href="/?pattern=observer">Observer</a>
-                <a class="dropdown-item visitor" href="/?pattern=visitor">Visitor</a>
-                <a class="dropdown-item state" href="/?pattern=state">State</a>
-                <a class="dropdown-item template" href="/?pattern=template">Template</a>
+                <a class="dropdown-item strategy" href="/?type=behavioral&pattern=strategy">Strategy</a>
+                <a class="dropdown-item chain" href="/?type=behavioral&pattern=chain">Chain</a>
+                <a class="dropdown-item command" href="/?type=behavioral&pattern=command">Command</a>
+                <a class="dropdown-item iterator" href="/?type=behavioral&pattern=iterator">Iterator</a>
+                <a class="dropdown-item mediator" href="/?type=behavioral&pattern=mediator">Mediator</a>
+                <a class="dropdown-item memento" href="/?type=behavioral&pattern=memento">Memento</a>
+                <a class="dropdown-item observer" href="/?type=behavioral&pattern=observer">Observer</a>
+                <a class="dropdown-item visitor" href="/?type=behavioral&pattern=visitor">Visitor</a>
+                <a class="dropdown-item state" href="/?type=behavioral&pattern=state">State</a>
+                <a class="dropdown-item template" href="/?type=behavioral&pattern=template">Template</a>
             </div>
         </li>
     </ul>
@@ -82,6 +82,28 @@
     <!--    <p class="lead">desired patterns like Adapter, Decorator ....</p>-->
     <!--    <hr class="my-4">-->
     <!--    <p>choose from menu your desired pattern.</p>-->
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-description" role="tab"
+               aria-controls="v-pills-description" aria-selected="true">Description</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-execution" role="tab"
+               aria-controls="v-pills-execution" aria-selected="false">Execution Result</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-description" role="tabpanel"
+                 aria-labelledby="v-pills-description-tab">
+                ...
+            </div>
+            <div class="tab-pane fade" id="v-pills-execution" role="tabpanel" aria-labelledby="v-pills-execution-tab">
+                ...
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
@@ -107,7 +129,7 @@ use src\App;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
-if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['pattern'])) {
+if (isset($_GET['pattern']) && isset($_GET['type']) && !file_exists(__DIR__ . '/../src/' . $_GET['type'] . '/' . $_GET['pattern'])) {
     echo '
           <div class="container">
             <div class="row">
@@ -119,7 +141,12 @@ if (isset($_GET['pattern']) && !file_exists(__DIR__ . '/../src/' . $_GET['patter
     die();
 }
 
-$app = App::getInstance();
-$app->dispatch($_GET['pattern']);
-
+$app    = App::getInstance();
+$result = $app->dispatch($_GET['type'], $_GET['pattern']);
 ?>
+
+<script>
+    var executionResult = <?php echo $result ?>;
+    document.querySelector("div#v-pills-execution").innerHTML = executionResult.result;
+    document.querySelector("div#v-pills-description").innerHTML = executionResult.description;
+</script>
